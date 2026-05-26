@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Basketball Scoreboard</h1>
+        <div class="scoreboard-container">
+            <div class="home-container">
+                <h2>Home</h2>
+                <div class="score-box">
+                    <span id="home-score">0</span>
+                </div>
+                <div>
+                    <button onclick="homePlusOne()">+1</button>
+                    <button onclick="homePlusTwo()">+2</button>
+                    <button onclick="homePlusThree()">+3</button>
+                </div>
+            </div>
+            <div class="away-container">
+                <h2>Away</h2>
+                <div class="score-box">
+                    <span id="away-score">0</span>
+                </div>
+                <div>
+                    <button onclick="awayPlusOne()">+1</button>
+                    <button onclick="awayPlusTwo()">+2</button>
+                    <button onclick="awayPlusThree()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="new-game" onclick="reset()">New game</button>
+    </body>
+    <footer>
+        <script src="index.js"></script>
+    </footer>
+</html>
